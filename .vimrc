@@ -33,9 +33,9 @@ set confirm
 
 set nocompatible
 set guifont=Courier\ New
-set cursorline
+"set cursorline
 
-
+set clipboard=unnamed
 
 " command line completion
 set wildmenu
@@ -110,9 +110,9 @@ map <C-l> <C-W>l
 " This will remap the 0 (zero) key to put you to the first character of a line, ignoring preceding whi$
 map 0 ^
 
-" source $MYVIMRC reloads the saved $MYVIMRC
+" <Leader> is \ by default, so those commands can be invoked by doing \v and \s
+" :source $MYVIMRC reloads the saved $MYVIMRC
 :nmap <Leader>s :source $MYVIMRC
-
 " opens $MYVIMRC for editing, or use :tabedit $MYVIMRC
 :nmap <Leader>v :e $MYVIMRC
 
@@ -120,3 +120,11 @@ map 0 ^
 noremap j gj
 noremap k gk
 
+" unmap the arrow keys to avoid temptation.
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
+" Toggle auto-indenting for code paste
+set pastetoggle=<F2>
