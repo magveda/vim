@@ -9,6 +9,8 @@ set backspace=indent,eol,start
 set history=50
 set ruler
 
+set ff=unix
+
 set laststatus=2
 set statusline=[%n]\ %t\ %m%r%h%w%=%10(%l,%L%)\ %p%%
 
