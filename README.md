@@ -1,4 +1,4 @@
-## Inslatt
+## Install
 
 ```bash
 sudo yum install vim -y
